@@ -171,29 +171,28 @@ export default {
   data () {
     return {
       menuButtonTitle: [
-        {name:"Overview", isActive:true},
-        {name:"Promotions", isActive:false},
-        {name:"Trends", isActive:false},
-        {name:"Promo codes", isActive:false}
+        {name: 'Overview', isActive: true},
+        {name: 'Promotions', isActive: false},
+        {name: 'Trends', isActive: false},
+        {name: 'Promo codes', isActive: false}
       ],
       leftMenuItems: [
-        {src: require('./assets/shorts.png'), bgColor:"#27e9b6"},
-        {src: require('./assets/sneakers.png'), bgColor:"#a389b2"},
-        {src: require('./assets/bag.png'), bgColor:"#36b2f5"},
-        {src: "", bgColor:"#e1e1e1"}
+        {src: require('./assets/shorts.png'), bgColor: '#27e9b6'},
+        {src: require('./assets/sneakers.png'), bgColor: '#a389b2'},
+        {src: require('./assets/bag.png'), bgColor: '#36b2f5'},
+        {src: '', bgColor: '#e1e1e1'}
       ]
     }
   },
   computed: {
-    initSeries : function() {
-      return [{              
-              data: [500, 700, 1000, 1300, 1500, 1700, 1400, 900, 800, 700, 500, 400, 400, 200, 300, 300, 250, 250, 300, 250, 100, 50],
-              showInLegend: false
-          }];
+    initSeries: function () {
+      return [{
+        data: [500, 700, 1000, 1300, 1500, 1700, 1400, 900, 800, 700, 500, 400, 400, 200, 300, 300, 250, 250, 300, 250, 100, 50],
+        showInLegend: false
+      }]
     }
   }
 }
-
 
 </script>
 
@@ -211,19 +210,19 @@ export default {
 }
 
 .borderedBlock {
-  border: 1px solid #e1e1e1;  
+  border: 1px solid #e1e1e1;
 }
 .borderedBlock-top {
-  border-top: 1px solid #e1e1e1;  
+  border-top: 1px solid #e1e1e1;
 }
 .borderedBlock-right {
-  border-right: 1px solid #e1e1e1;  
+  border-right: 1px solid #e1e1e1;
 }
 .borderedBlock-bottom {
-  border-bottom: 1px solid #e1e1e1;  
+  border-bottom: 1px solid #e1e1e1;
 }
 .borderedBlock-left {
-  border-left: 1px solid #e1e1e1;  
+  border-left: 1px solid #e1e1e1;
 }
 .pad20 {
   padding: 20px;
@@ -231,7 +230,7 @@ export default {
 
 .logo {
   display: inline-block;
-  height: 47px;  
+  height: 47px;
   margin: 10px;
   cursor: pointer;
 }
@@ -271,13 +270,9 @@ export default {
   top: 0;
 }
 
-
-
-
 .headerBlock {
   background-color: #f7f7f7;
 }
-
 
 .dashboardItem .dashboard__subtitle {
   cursor: pointer;
@@ -291,9 +286,8 @@ export default {
   color: #27e9b6!important;
 }
 
-
 .progressLegend {
-  font-size: 14px;  
+  font-size: 14px;
   list-style-type: none;
   color: #58595b;
   text-align: left;
@@ -303,7 +297,7 @@ export default {
   position: relative;
   margin-left: 30px;
 }
-.progressLegend li:before {    
+.progressLegend li:before {
   position: absolute;
   top: 5px;
   left: -30px;
@@ -311,13 +305,13 @@ export default {
   content: "";
   width: 10px;
   height: 10px;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 .discountTrendBaloons li, .marketActivityItems li, .topColorItems li, .topMaterials li {
-  list-style-type: none;  
+  list-style-type: none;
   display: inline-block;
-  margin: 20px 15px;  
+  margin: 20px 15px;
 }
 
 .image-container {
@@ -329,10 +323,10 @@ export default {
   overflow: hidden;
 }
 .image-container img {
-  display: block; 
+  display: block;
   max-width: 100%;
   height: auto;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .marketActivityItems, .topColorItems, .topMaterials {
